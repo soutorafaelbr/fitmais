@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Ingredients\Type;
+use App\Models\Ingredients\IngredientType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -16,7 +16,7 @@ class CreateIngredientsTable extends Migration
     {
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Type::class);
+            $table->foreignIdFor(IngredientType::class);
             $table->string('name');
             $table->enum('measured_by', ['weight', 'unity']);
             $table->timestamps();
