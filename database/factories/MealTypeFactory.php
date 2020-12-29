@@ -12,7 +12,7 @@ class MealTypeFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->text(20)
+            'title' => $this->faker->text(20),
         ];
     }
 }

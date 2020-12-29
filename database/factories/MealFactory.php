@@ -16,9 +16,9 @@ class MealFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => fn() => User::factory()->create()->id,
-            'ingredient_id' => fn() => Ingredient::factory()->create()->id,
-            'meal_type_id' => fn() => MealType::factory()->create()->id,
+            'user_id' => fn () => User::factory()->create()->id,
+            'ingredient_id' => fn () => Ingredient::factory()->create()->id,
+            'meal_type_id' => fn () => MealType::factory()->create()->id,
             'title' => $this->faker->text(20),
         ];
     }
