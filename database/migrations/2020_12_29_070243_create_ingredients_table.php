@@ -18,6 +18,7 @@ class CreateIngredientsTable extends Migration
             $table->id();
             $table->foreignIdFor(IngredientType::class);
             $table->string('name');
+            $table->integer('weight');
             $table->enum('measured_by', ['weight', 'unit']);
             $table->timestamps();
         });

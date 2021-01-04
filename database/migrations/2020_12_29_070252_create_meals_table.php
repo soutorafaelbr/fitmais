@@ -19,10 +19,10 @@ class CreateMealsTable extends Migration
         Schema::create('meals', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Ingredient::class);
             $table->foreignIdFor(MealType::class);
             $table->string('title');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -1,9 +1,8 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Ingredients;
 
 use App\Models\Ingredients\IngredientType;
-use App\Models\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class IngredientTypeFactory extends Factory

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Meals;
 
 use App\Models\Meals\MealType;
 use Illuminate\Database\Eloquent\Factories\Factory;

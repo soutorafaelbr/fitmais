@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Ingredients;
 
 use App\Models\Ingredients\Ingredient;
 use App\Models\Ingredients\IngredientType;
@@ -16,6 +16,7 @@ class IngredientFactory extends Factory
             'name' => $this->faker->text(20),
             'ingredient_type_id' => fn () => IngredientType::factory()->create()->id,
             'measured_by' => $this->faker->randomElement(['unit', 'weight']),
+            'weight' => $this->faker->randomDigit,
         ];
     }
 }
